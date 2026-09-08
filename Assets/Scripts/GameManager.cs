@@ -86,8 +86,9 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
-        Debug.Log("Restarting");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("Returning to Main Menu");
+        // Loads the Main Menu scene instead of reloading the active scene
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void SetGameState(GameState newState)
